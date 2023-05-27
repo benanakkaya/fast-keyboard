@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { boolean } from 'yup';
 import { ScoreType } from '../App';
 
 type PropTypes = {
