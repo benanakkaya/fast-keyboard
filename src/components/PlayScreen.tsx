@@ -1,4 +1,3 @@
-import { isAllOf } from "@reduxjs/toolkit";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { ScoreType } from "../App";
