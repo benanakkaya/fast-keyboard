@@ -38,7 +38,7 @@ const PlayScreen: React.FC<PropTypes> = ({
 
   useEffect(() => {
     const getWords = async () => {
-      const res = await axios.get("/words.txt");
+      const res = await axios.get("https://raw.githubusercontent.com/benanakkaya/fast-keyboard/main/public/words.txt");
       const wordString: string = res.data;
       const wordArray: string[] = wordString.split(/\r?\n/);
       setWordList(wordArray);
