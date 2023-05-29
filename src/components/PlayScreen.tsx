@@ -35,9 +35,10 @@ const PlayScreen: React.FC<PropTypes> = ({
     setRandomWord(randomNumber);
   };
 
+
   useEffect(() => {
     const getWords = async () => {
-      const res = await axios.get("../../public/words.txt");
+      const res = await axios.get("public//words.txt");
       const wordString: string = res.data;
       const wordArray: string[] = wordString.split(/\r?\n/);
       setWordList(wordArray);
